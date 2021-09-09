@@ -19,7 +19,7 @@ function calculateLossOrProfit (initial , quantity , current)
 if(initial > current)
 {
    var loss = (initial - current) * quantity;
-   var lossPercentage = (loss/initial) * 100;
+   var lossPercentage = (loss / initial) * 100;
 
    if(loss === 0)
    {
@@ -39,7 +39,7 @@ else if(current > initial)
 {
 
     var profit = (current - initial) * quantity;
-    var profitPercentage = (profit/initial) * 100;
+    var profitPercentage = (profit / initial) * 100;
 
   if(profit === 0)
   {
