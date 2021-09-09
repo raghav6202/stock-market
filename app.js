@@ -19,32 +19,47 @@ function calculateLossOrProfit (initial , quantity , current)
 if(initial > current)
 {
    var loss = (initial - current) * quantity;
-   var lossPercentage = (loss/initial) * 10;
+   var lossPercentage = (loss/initial) * 100;
 
+   if(loss === 0)
+   {
+    outputDisplay.innerText = "Quantity cannot be zero"; 
+   }
+
+   else
+   {
    mainSpace.style.backgroundColor= 'red';
 
 
-   outputDisplay.innerText = "Ohhho No!! You Incured A Loss 😔 \n Your loss is " + loss.toFixed(2) + " loss percentage is " + lossPercentage.toFixed(2) + "%";
+   outputDisplay.innerText = "Ohhho No!! You've Incured A Loss 😔 \n Your loss is " + loss.toFixed(2) + " loss percentage is " + lossPercentage.toFixed(2) + "%";
+}
 }
 
 else if(current > initial)
 {
 
     var profit = (current - initial) * quantity;
-    var profitPercentage = (profit/initial) * 10;
+    var profitPercentage = (profit/initial) * 100;
 
-  
+  if(profit === 0)
+  {
+    outputDisplay.innerText = "Quantity cannot be zero";  
+  }
+  else
+  {
 
     mainSpace.style.backgroundColor = 'green';
 
     outputDisplay.innerText = "Yayy !!!! You've Made A Profit 🤩 \n Your profit is " + profit.toFixed(2) + " profit percentage is " + profitPercentage.toFixed(2)  + "% "
-    
+}  
 }
+
+
 
 else
 {
     mainSpace.style.backgroundColor = 'yellow';
-   outputDisplay.innerText = "You neither made a profit nor incurred a loss.";
+   outputDisplay.innerText = "You've neither made a profit nor incurred a loss.";
 
 }
 }
@@ -52,9 +67,9 @@ else
 function clickHandler()
 {
 
-    var initP = initialPrice.value;
-    var qnty = stocksQuantity.value;
-    var curr = currentPrice.value;
+    var initP = Number(initialPrice.value);
+    var qnty = Number(stocksQuantity.value);
+    var curr = Number(currentPrice.value);
 
     calculateLossOrProfit(initP, qnty , curr);
 
@@ -62,3 +77,5 @@ function clickHandler()
 }
 
 calculateBtn.addEventListener('click', clickHandler)
+
+console.log(currentPrice)

@@ -84,10 +84,12 @@ h3
     padding: 0.7rem 4rem;
     border-radius: 0.5rem;
     font-size: large;
+    font-weight: bold;
     cursor: pointer;
     outline: white;
   background-color: #5D3DF9 ;
     margin: auto;
     margin-bottom: 1.5rem;
     display: block;
+    font-family: 'Catamaran', sans-serif;
 }
