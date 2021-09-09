@@ -24,7 +24,7 @@ if(initial > current)
    mainSpace.style.backgroundColor= 'red';
 
 
-   outputDisplay.innerText = "Ohhho No!! You Incured A Loss \n Your loss is " + loss.toFixed(2) + " loss percentage is " + lossPercentage.toFixed(2) + "%";
+   outputDisplay.innerText = "Ohhho No!! You Incured A Loss 😔 \n Your loss is " + loss.toFixed(2) + " loss percentage is " + lossPercentage.toFixed(2) + "%";
 }
 
 else if(current > initial)
@@ -37,7 +37,7 @@ else if(current > initial)
 
     mainSpace.style.backgroundColor = 'green';
 
-    outputDisplay.innerText = "Yayy !!!! You made a profit \n Your profit is " + profit.toFixed(2) + " profit percentage is " + profitPercentage.toFixed(2)  + "% "
+    outputDisplay.innerText = "Yayy !!!! You've Made A Profit 🤩 \n Your profit is " + profit.toFixed(2) + " profit percentage is " + profitPercentage.toFixed(2)  + "% "
     
 }
 

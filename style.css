@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
 *
 {
    margin: 0em;
@@ -10,8 +13,10 @@ body
     text-align: center;
    
     color: rgb(5, 2, 2);
-    background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'); 
+    background-image: url('https://cdn.pixabay.com/photo/2017/07/02/09/10/stock-2463798_960_720.jpg'); 
 background-size: cover;
+
+font-family: 'Catamaran', sans-serif;
 }
 
 header
@@ -24,6 +29,7 @@ header
     padding: 1rem;
     border-radius: 2rem;
     color: black;
+    font-family: 'Catamaran', sans-serif;
     
    
 }
@@ -52,9 +58,11 @@ input {
     width: 97%;
     margin: 0.5rem 1rem 1rem 0;
     font-weight: bold;
+    font-family: 'Catamaran', sans-serif;
 }
 label {
     font-size: 1.25rem;
+    font-weight: bold;
 }
 
 
@@ -69,7 +77,7 @@ h3
 #calculate-btn
 {
 
-    background: var(--primary-color);
+   
     border: none;
     color: black;
     
@@ -77,8 +85,8 @@ h3
     border-radius: 0.5rem;
     font-size: large;
     cursor: pointer;
-    outline: #2080A1;
-  background-color: #62a301 ;
+    outline: white;
+  background-color: #5D3DF9 ;
     margin: auto;
     margin-bottom: 1.5rem;
     display: block;
