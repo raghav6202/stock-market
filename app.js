@@ -14,14 +14,13 @@ const mainSpace = document.querySelector("main");
 function calculateLossOrProfit (initial , quantity , current)
 {
 
-   
 
 if(initial > current)
 {
-   var loss = (initial - current) * quantity;
+   var loss = (initial - current) * (quantity);
    var lossPercentage = (loss / (initial * quantity)) * 100;
 
-   if(loss === 0)
+   if((loss === 0))
    {
     outputDisplay.innerText = "Quantity cannot be zero"; 
    }
@@ -38,7 +37,7 @@ if(initial > current)
 else if(current > initial)
 {
 
-    var profit = (current - initial) * quantity;
+    var profit = (current - initial) * (quantity);
     var profitPercentage = (profit / (initial * quantity)) * 100;
 
   if(profit === 0)
@@ -67,9 +66,9 @@ else
 function clickHandler()
 {
 
-    var initP =(initialPrice.value);
-    var qnty = (stocksQuantity.value);
-    var curr = (currentPrice.value);
+    var initP = Number(initialPrice.value);
+    var qnty = Number(stocksQuantity.value);
+    var curr = Number(currentPrice.value);
 
     calculateLossOrProfit(initP, qnty , curr);
 
